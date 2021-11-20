@@ -1,6 +1,6 @@
 
 <!-- #region -->
-# Music Information Retrieval Fundamentals: From Classic Algorithms to Deep Learning approcches
+# Music Information Retrieval Fundamentals: From Classic Algorithms to Deep Learning approaches
 
 
 [**Carlos Hernandez-Olivan**](https://carlosholivan.github.io)
@@ -8,7 +8,7 @@
 
 <!-- #endregion -->
 
-This lectures contain the absic concepts of Music Information Retrieval and also new Deep Learning models that have been used in MIR. The idea is to introduce new undergraduate students to MIR. 
+This lectures contain the basic concepts of Music Information Retrieval and also new Deep Learning models that have been used in MIR. The idea is to introduce new undergraduate students to MIR. 
 
 
 The rendered book can be found here: 
