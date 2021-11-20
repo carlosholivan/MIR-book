@@ -1,5 +1,5 @@
 # python & jupyter
-nn_book/_build/*
+mir_book/_build/*
 .ipynb_checkpoints
 __pycache__/
 
