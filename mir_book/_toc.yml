@@ -1,4 +1,25 @@
 format: jb-book
 root: docs/index
-chapters:
-- file: docs/basic_concepts
+parts:
+  - caption: Introduction to MIR
+    chapters:
+      sections:
+      - file: docs/1_what_is_mir
+      - file: docs/2_music_basic_concepts
+      #- file: docs/3_sound
+      #- file: docs/4_representations
+      #- file: docs/5_interfaces
+
+  #- caption: Audio Features and Representations
+    #chapters:
+    #- file: docs/7_stft
+    #- file: docs/8_spectrum
+    #- file: docs/9_cqt
+    #- file: docs/10_mfcc
+    #- file: docs/11_chromagram
+
+  #- caption: Introduction to MIR Fields
+    #chapters:
+    #- file: docs/12_music_structure_detection
+    #- file: docs/13_amt
+    #- file: docs/14_music_generation
