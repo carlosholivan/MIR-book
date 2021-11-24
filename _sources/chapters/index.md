@@ -13,7 +13,7 @@ This lectures contain the basic concepts of Music Information Retrieval and also
 
 The rendered book can be found here: 
 
-[https://carlosholivan.github.io/resources/mir/index.html](https://carlosholivan.github.io/resources/mir/index.html),
+[https://carlosholivan.github.io/MIR-book](https://carlosholivan.github.io/MIR-book)
 
 in the left menu select any chapter below the Introduction, click the "rocket" icon at the top right of the screen, and choose “Binder". After some initialization time (for the first time it is rather long) the notebook can be run.
 
@@ -23,7 +23,7 @@ For local running, the codes for each chapter in the form of
 Appendix {ref}`app-run` explains step-by-step how to proceed with the local execution of the codes.
 ```
 
-```{admonition} $~$
+```{admonition}
 Built with [Jupyter Book
 2.0](https://beta.jupyterbook.org/intro.html) tool set, as part of the
 [ExecutableBookProject](https://ebp.jupyterbook.org/en/latest/).  

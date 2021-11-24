@@ -22,8 +22,8 @@
       
 
     
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -33,17 +33,17 @@
     
   <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
+    <script >
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
@@ -51,7 +51,7 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Music and Sound Basic Concepts" href="basic_concepts.html" />
+    <link rel="next" title="1. Introduction ot MIR" href="01/intro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -84,9 +84,36 @@
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="01/intro.html">
+   1. Introduction to MIR
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="01/1/what_is_mir.html">
+     1.1. What is MIR?
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="01/1/what_is_music.html">
+     1.2. What is Music?
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="01/2/music_basic_concepts.html">
+     1.3. Music Basic Concepts
+    </a>
+   </li>
+  </ul>
+ </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="basic_concepts.html">
-   Music and Sound Basic Concepts
+  <a class="reference internal" href="02/index.html">
+   2. References
   </a>
  </li>
 </ul>
@@ -130,7 +157,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/docs/index.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/chapters/index.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -150,10 +177,10 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/carlosholivan/MIR-book//issues/new?title=Issue%20on%20page%20%2Fdocs/index.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/carlosholivan/MIR-book//issues/new?title=Issue%20on%20page%20%2Fchapters/index.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/carlosholivan/MIR-book/edit/master/mir_book/docs/index.md"><button
+        <a class="edit-button" href="https://github.com/carlosholivan/MIR-book/edit/master/mir_book/chapters/index.md"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -188,13 +215,13 @@
 <!-- #endregion -->
 <p>This lectures contain the basic concepts of Music Information Retrieval and also new Deep Learning models that have been used in MIR. The idea is to introduce new undergraduate students to MIR.</p>
 <p>The rendered book can be found here:</p>
-<p><a class="reference external" href="https://carlosholivan.github.io/resources/mir/index.html">https://carlosholivan.github.io/resources/mir/index.html</a>,</p>
+<p><a class="reference external" href="https://carlosholivan.github.io/MIR-book">https://carlosholivan.github.io/MIR-book</a></p>
 <p>in the left menu select any chapter below the Introduction, click the “rocket” icon at the top right of the screen, and choose “Binder”. After some initialization time (for the first time it is rather long) the notebook can be run.</p>
 <p>For local running, the codes for each chapter in the form of
 <a class="reference external" href="https://jupyter.org">Jupyter</a> notebooks can be downloaded by clicking the “arrow-down” icon at the top right of the screen. A complete set of files is also available from the links given above.</p>
 <p>Appendix <span class="xref std std-ref">app-run</span> explains step-by-step how to proceed with the local execution of the codes.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
-```{admonition} $~$
+```{admonition}
 Built with [Jupyter Book
 2.0](https://beta.jupyterbook.org/intro.html) tool set, as part of the
 [ExecutableBookProject](https://ebp.jupyterbook.org/en/latest/).  
@@ -217,7 +244,7 @@ Built with [Jupyter Book
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./docs"
+            path: "./chapters"
         },
         predefinedOutput: true
     }
@@ -229,10 +256,10 @@ Built with [Jupyter Book
         
             <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='right-next' id="next-link" href="basic_concepts.html" title="next page">
+    <a class='right-next' id="next-link" href="01/intro.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Music and Sound Basic Concepts</p>
+        <p class="prev-next-title"><span class="section-number">1. </span>Introduction ot MIR</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
