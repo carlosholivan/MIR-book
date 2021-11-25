@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Music and Sound Basic Concepts &#8212; Music Information Retrieval Fundamentals: From Classic Algorithms to Deep Learning approcches</title>
+    <title>1.6. Music Representations and Interfaces &#8212; Music Information Retrieval Fundamentals: From Classic Algorithms to Deep Learning approcches</title>
     
   <link href="../../../_static/css/theme.css" rel="stylesheet">
   <link href="../../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -51,6 +51,8 @@
     <script async="async" src="../../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="2. References" href="../../02/index.html" />
+    <link rel="prev" title="1.5. Sound" href="sound.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -82,25 +84,45 @@
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <ul class="nav bd-sidenav">
- <li class="toctree-l1 has-children">
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="../intro.html">
    1. Introduction to MIR
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
+  <ul class="current">
    <li class="toctree-l2">
-    <a class="reference internal" href="../1/what_is_mir.html">
+    <a class="reference internal" href="what_is_mir.html">
      1.1. What is MIR?
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../1/what_is_music.html">
+    <a class="reference internal" href="what_is_music.html">
      1.2. What is Music?
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="music_basic_concepts.html">
+     1.3. Music Basic Concepts
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="instruments.html">
+     1.4. Music Instruments
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sound.html">
+     1.5. Sound
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     1.6. Music Representations
     </a>
    </li>
   </ul>
@@ -151,7 +173,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../../../_sources/chapters/01/2/music_basic_concepts.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="../../../_sources/chapters/01/1/representations.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
@@ -171,10 +193,10 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/carlosholivan/MIR-book//issues/new?title=Issue%20on%20page%20%2Fchapters/01/2/music_basic_concepts.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/carlosholivan/MIR-book//issues/new?title=Issue%20on%20page%20%2Fchapters/01/1/representations.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/carlosholivan/MIR-book/edit/master/mir_book/chapters/01/2/music_basic_concepts.ipynb"><button
+        <a class="edit-button" href="https://github.com/carlosholivan/MIR-book/edit/master/mir_book/chapters/01/1/representations.ipynb"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -189,23 +211,6 @@
 
             <!-- Launch buttons -->
 
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
-    <div class="dropdown-buttons">
-        
-        <a class="binder-button" href="https://mybinder.org/v2/gh/carlosholivan/MIR-book/master?urlpath=tree/mir_book/chapters/01/2/music_basic_concepts.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
-                data-placement="left"><img class="binder-button-logo"
-                    src="../../../_static/images/logo_binder.svg"
-                    alt="Interact on binder">Binder</button></a>
-        
-        
-        
-        
-    </div>
-</div>
-
         </div>
 
         <!-- Table of contents -->
@@ -217,46 +222,60 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#melody">
-   Melody
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#harmony">
-   Harmony
+  <a class="reference internal nav-link" href="#music-representations">
+   1.6.1. Music Representations
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#key-or-tonality">
-     Key or Tonality
+    <a class="reference internal nav-link" href="#music-score-or-sheet">
+     1.6.1.1. Music Score or Sheet
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#chord">
-     Chord
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#chord-or-harmonic-progression">
-     Chord or HArmonic Progression
+    <a class="reference internal nav-link" href="#pianoroll">
+     1.6.1.2. Pianoroll
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#rhythm">
-   Rhythm
+  <a class="reference internal nav-link" href="#interfaces">
+   1.6.2. Interfaces
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#form-or-structure">
-   Form or Structure
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#texture">
-   Texture
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#musical-instrument-digital-interface-midi">
+     1.6.2.1. Musical Instrument Digital Interface (MIDI)
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#tracks">
+       1.6.2.1.1. Tracks
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#note-events">
+       1.6.2.1.2. Note Events
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#musicxml">
+     1.6.2.2. MusicXML
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#abc">
+     1.6.2.3. ABC
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#digital-audio-workstation-daw">
+     1.6.2.4. Digital Audio Workstation (DAW)
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -269,31 +288,44 @@
         
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="music-and-sound-basic-concepts">
-<h1>Music and Sound Basic Concepts<a class="headerlink" href="#music-and-sound-basic-concepts" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="melody">
-<h2>Melody<a class="headerlink" href="#melody" title="Permalink to this headline">¶</a></h2>
+  <div class="tex2jax_ignore mathjax_ignore section" id="music-representations-and-interfaces">
+<h1><span class="section-number">1.6. </span>Music Representations and Interfaces<a class="headerlink" href="#music-representations-and-interfaces" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="music-representations">
+<h2><span class="section-number">1.6.1. </span>Music Representations<a class="headerlink" href="#music-representations" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="music-score-or-sheet">
+<h3><span class="section-number">1.6.1.1. </span>Music Score or Sheet<a class="headerlink" href="#music-score-or-sheet" title="Permalink to this headline">¶</a></h3>
 </div>
-<div class="section" id="harmony">
-<h2>Harmony<a class="headerlink" href="#harmony" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="key-or-tonality">
-<h3>Key or Tonality<a class="headerlink" href="#key-or-tonality" title="Permalink to this headline">¶</a></h3>
-</div>
-<div class="section" id="chord">
-<h3>Chord<a class="headerlink" href="#chord" title="Permalink to this headline">¶</a></h3>
-</div>
-<div class="section" id="chord-or-harmonic-progression">
-<h3>Chord or HArmonic Progression<a class="headerlink" href="#chord-or-harmonic-progression" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="pianoroll">
+<h3><span class="section-number">1.6.1.2. </span>Pianoroll<a class="headerlink" href="#pianoroll" title="Permalink to this headline">¶</a></h3>
 </div>
 </div>
-<div class="section" id="rhythm">
-<h2>Rhythm<a class="headerlink" href="#rhythm" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="interfaces">
+<h2><span class="section-number">1.6.2. </span>Interfaces<a class="headerlink" href="#interfaces" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="musical-instrument-digital-interface-midi">
+<h3><span class="section-number">1.6.2.1. </span>Musical Instrument Digital Interface (MIDI)<a class="headerlink" href="#musical-instrument-digital-interface-midi" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="tracks">
+<h4><span class="section-number">1.6.2.1.1. </span>Tracks<a class="headerlink" href="#tracks" title="Permalink to this headline">¶</a></h4>
+<p>Program number</p>
+<p>Channel</p>
 </div>
-<div class="section" id="form-or-structure">
-<h2>Form or Structure<a class="headerlink" href="#form-or-structure" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="note-events">
+<h4><span class="section-number">1.6.2.1.2. </span>Note Events<a class="headerlink" href="#note-events" title="Permalink to this headline">¶</a></h4>
+<p>Note on</p>
+<p>Note off</p>
+<p>Velocity</p>
+<p>Ticks</p>
+<p>PPQ (pulses per quarter note)</p>
 </div>
-<div class="section" id="texture">
-<h2>Texture<a class="headerlink" href="#texture" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="musicxml">
+<h3><span class="section-number">1.6.2.2. </span>MusicXML<a class="headerlink" href="#musicxml" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="abc">
+<h3><span class="section-number">1.6.2.3. </span>ABC<a class="headerlink" href="#abc" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="digital-audio-workstation-daw">
+<h3><span class="section-number">1.6.2.4. </span>Digital Audio Workstation (DAW)<a class="headerlink" href="#digital-audio-workstation-daw" title="Permalink to this headline">¶</a></h3>
+</div>
 </div>
 </div>
 
@@ -310,7 +342,7 @@
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./chapters\01\2"
+            path: "./chapters\01\1"
         },
         predefinedOutput: true
     }
@@ -321,7 +353,21 @@
               
         
             <!-- Previous / next buttons -->
-<div class='prev-next-area'>
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="sound.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title"><span class="section-number">1.5. </span>Sound</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../../02/index.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">2. </span>References</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
         
         </div>
